@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://pkpl.com/</loc>
+         <lastmod>2025-02-26</lastmod>
+    </url>
+    <url>
+         <loc>https://pkpl.com/materials/threat-dragon/identify-and-mitigate-threats/</loc>
+         <lastmod>2025-02-26</lastmod>
+    </url>
+    <url>
+         <loc>https://pkpl.com/materials/threat-dragon/intro/</loc>
+         <lastmod>2025-02-26</lastmod>
+    </url>
+    <url>
+         <loc>https://pkpl.com/materials/threat-dragon/threat-diagram/</loc>
+         <lastmod>2025-02-26</lastmod>
+    </url>
 </urlset>

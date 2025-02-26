@@ -1,4 +1,4 @@
-site_name: Pengantar Keamanan Perangkat Lunak
+site_name: Introduction to Software Security (PKPL)
 site_url: https://pkpl.com/
 theme:
   name: material
@@ -7,4 +7,4 @@ nav:
   - Materials:
     - Threat Dragon:
       - materials/threat-dragon/intro.md
-      - materials/threat-dragon/app-diagram.md
+      - materials/threat-dragon/threat-diagram.md
