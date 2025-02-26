@@ -2,3 +2,9 @@ site_name: Pengantar Keamanan Perangkat Lunak
 site_url: https://pkpl.com/
 theme:
   name: material
+nav:
+  - Home: index.md
+  - Materials:
+    - Threat Dragon:
+      - materials/threat-dragon/intro.md
+      - materials/threat-dragon/app-diagram.md
