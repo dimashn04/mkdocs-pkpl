@@ -90,4 +90,4 @@ By following this guide, you can effectively create a STRIDE-based threat diagra
 
 For further improvements, consider integrating the threat model into your Secure Development Lifecycle (SDLC).
 
-Happy threat modeling! 🚀
+Happy threat modeling!
