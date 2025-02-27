@@ -15,6 +15,31 @@ To ensure effective threat identification, a specific methodology such as threat
 
 The purpose of this categorization is to help identify threats from the attacker’s perspective. The DFDs created in the previous step can reveal potential attack targets, such as resources, processes, data flows, and user interactions. To further organize these threats, threat trees can also be used, where each tree represents a specific threat objective. Common threat lists along with examples can also assist in the identification process. Additionally, use and abuse/misuse cases can illustrate how existing protective measures may be bypassed or where there may be security gaps in project components.
 
+### STRIDE
+
+The STRIDE model is a useful mnemonic for identifying threats by encouraging us to think about attacker steps such as:
+* **S**poofing
+* **T**ampering
+* **R**epudiation
+* **I**nformation Disclosure
+* **D**enial of Service
+* **E**levation of Privilege
+
+The following is a list of STRIDE threats along with their security controls:
+| Type                   | Description                                                                                                                         | Security Control |
+| ---------------------- |:----------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| Spoofing               | Threat action aimed at illegally accessing and using other users' credentials, such as usernames and passwords                      | Authentication   |
+| Tampering              | Threat action aimed at modifying data, either changing data stored in databases or altering data during transit through the network | Integrity        |
+| Repudiation            | Threat action in the form of illegal activities in a system that lacks the ability to track actions that have been taken            | Non-Repudiation  |
+| Information disclosure | Threat action in the form of unauthorized reading of files or reading data during transit                                           | Confidentiality  |
+| Denial of service      | Threat action aimed at denying access to valid users, such as by making a web server temporarily unavailable                        | Availability     |
+| Elevation of privilege | Threat action that aims to obtain higher access rights to access information or infiltrate systems illegally                        | Authorization    |
+
+### Threat Ranking
+
+Threats can be ranked from a risk factor perspective. By determining the risk factors posed by various identified threats, we can prioritize threats to support risk mitigation strategies, such as prioritizing which threats to mitigate first. Different risk factors can be used to rank threats as *High*, *Medium*, or *Low* risk. Generally, threat risk models use various factors to model risk as shown below:<br>
+![image](../../assets/images/risk-factors.jpg)
+
 ## Determining Countermeasures and Mitigation Steps
 
 A vulnerability’s risk can be reduced or even eliminated by implementing appropriate countermeasures. One way to identify countermeasures is by using threat-countermeasure mapping lists. When determining the priority of countermeasures, the approaches used often vary, but typically consider factors such as the likelihood of an attack occurring, the potential impact of an attack, as well as the complexity or cost of remediation.
@@ -25,6 +50,23 @@ Risk mitigation strategies can also be evaluated based on their business impact.
 - **Eliminate**: Remove the components that cause the vulnerability.
 - **Mitigate**: Add protective mechanisms to reduce the impact or likelihood of the threat occurring.
 - **Transfer**: Shift the risk to another party, such as an insurance company or customer.
+
+### Threat Mitigation Techniques Based on STRIDE
+Here are some mitigation techniques appropriate for each type of threat in the STRIDE model:
+
+| Type                   | Mitigation Techniques                                                                                                                                                                                                               |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spoofing               | <ul><li>Appropriate authentication</li><li>Protection of sensitive data</li><li>Avoiding unnecessary storage of confidential information</li></ul>                                                                                  |
+| Tampering              | <ul><li>Implementation of proper authorization</li><li>Use of hashes, MAC, or digital signatures to ensure data integrity</li><li>Tamper-resistant protocols</li></ul>                                                              |
+| Repudiation            | <ul><li>Use of digital signatures</li><li>Timestamping</li><li>Creation of audit trails</li></ul>                                                                                                                                   |
+| Information disclosure | <ul><li>Implementation of authorization controls</li><li>Use of privacy-enhancing protocols</li><li>Data encryption</li><li>Protection of sensitive data</li><li>Avoiding unnecessary storage of confidential information</li></ul> |
+| Denial of service      | <ul><li>Implementation of appropriate authentication and authorization</li><li>Traffic filtering and limitation</li><li>Implementation of Quality of Service</li></ul>                                                              |
+| Elevation of privilege | <ul><li>Running systems with minimal access rights (least privilege)</li></ul>                                                                                                                                                      |
+
+After threats and appropriate security measures are identified, we can determine the threat profile based on the following criteria:
+1. **Non-mitigated threats**: Threats that do not have security measures and represent vulnerabilities that can be fully exploited and cause significant impact.
+2. **Partially mitigated threats**: Threats that are only reduced by one or more security measures, so they can still be partially exploited and cause limited impact.
+3. **Fully mitigated threats**: Threats that have adequate security measures and no longer expose the system to vulnerabilities.
 
 ## Evaluation
 
