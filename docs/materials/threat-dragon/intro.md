@@ -17,15 +17,16 @@ The purpose of this categorization is to help identify threats from the attacker
 
 ### STRIDE
 
-The STRIDE model is a useful mnemonic for identifying threats by encouraging us to think about attacker steps such as:
-* **S**poofing
-* **T**ampering
-* **R**epudiation
-* **I**nformation Disclosure
-* **D**enial of Service
-* **E**levation of Privilege
+The STRIDE model is a useful mnemonic for identifying threats by encouraging us to think about attacker steps such as:  
+    - **S**poofing  
+    - **T**ampering  
+    - **R**epudiation  
+    - **I**nformation Disclosure  
+    - **D**enial of Service  
+    - **E**levation of Privilege  
 
-The following is a list of STRIDE threats along with their security controls:
+The following is a list of STRIDE threats along with their security controls:  
+
 | Type                   | Description                                                                                                                         | Security Control |
 | ---------------------- |:----------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | Spoofing               | Threat action aimed at illegally accessing and using other users' credentials, such as usernames and passwords                      | Authentication   |
